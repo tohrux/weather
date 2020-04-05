@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <title>天气查询系统</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- left -->
+        <div class="left">
+            <div class="gradient"></div>
+            <div class="left-top">
+                <div class="date-message">
+                    <h2 id="day">周二</h2>
+                    <span id="date">2020-4-3</span>
+                    <!-- 图标 -->
+                    <div class="location">
+                        <span class="iconfont" id="location">&#xe618;上海</span>
+                    </div>
+                </div>
+                <div class="left-temperature">
+                    <!-- <div>logo</div> -->
+                    <span class="iconfont" id="weather1">&#xe61f;</span>
+                    <div class="weather-temp">
+                        <span id="weather-temp">24</span>
+                    </div>
+                    <div class="weather-desc" id="weather-desc">
+                        晴天
+                    </div>
+                </div>
+
+            </div>
+            <div class="left-bottom"></div>
+        </div>
+        <!-- right; -->
+        <div class="right">
+            <div class="right1">
+                <div class="clear">
+                    <span class="title">pm2.5</span>
+                    <span class="value" id="pm25">55</span>
+                </div>
+                <div class="clear">
+                    <span class="title">湿度</span>
+                    <span class="value">暂无</span>
+                </div>
+                <div class="clear">
+                    <span class="title">风速</span>
+                    <span class="value" id="wind">东南风3~4级</span>
+                </div>
+            </div>
+            <div class="right2">
+                <ul class="clear">
+                    <li class="active">
+                        <!-- 天气图标 -->
+                        <span class="iconfont" id="k1">&#xe61f;</span>
+                        <span class="day-name" id="a1">周二</span>
+                        <span class="day-temp" id="a2">25℃</span>
+                    </li>
+                    <li>
+                        <!-- 天气图标 -->
+                        <span class="iconfont" id="k2">&#xe61f;</span>
+                        <span class="day-name" id="b1">星期三</span>
+                        <span class="day-temp" id="b2">25℃</span>
+                    </li>
+                    <li>
+                        <!-- 天气图标 -->
+                        <span class="iconfont" id="k3">&#xe623;</span>
+                        <span class="day-name" id="c1">星期四</span>
+                        <span class="day-temp" id="c2">25℃</span>
+                    </li>
+                    <li>
+                        <!-- 天气图标 -->
+                        <span class="iconfont" id="k4">&#xe61f;</span>
+                        <span class="day-name" id="d1">星期五</span>
+                        <span class="day-temp" id="d2">25℃</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="right3">
+                <input type="text" placeholder="位置" id="city">
+            </div>
+            <div class="right4">
+                <button id="search-button">
+                    <span class="iconfont">&#xe610;</span>
+                    <span>查询</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+    </script>
+    <!-- <script src="https://api.asilu.com/weather/?city=${kkk}&callback=weather"> -->
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,222 @@
+ @font-face {
+     font-family: 'iconfont';
+     /* project id 1735895 */
+     src: url('https://at.alicdn.com/t/font_1735895_2pjazbpm1k2.eot');
+     src: url('https://at.alicdn.com/t/font_1735895_2pjazbpm1k2.eot?#iefix') format('embedded-opentype'),
+         url('https://at.alicdn.com/t/font_1735895_2pjazbpm1k2.woff2') format('woff2'),
+         url('https://at.alicdn.com/t/font_1735895_2pjazbpm1k2.woff') format('woff'),
+         url('https://at.alicdn.com/t/font_1735895_2pjazbpm1k2.ttf') format('truetype'),
+         url('https://at.alicdn.com/t/font_1735895_2pjazbpm1k2.svg#iconfont') format('svg');
+ }
+
+ .iconfont {
+     font-family: "iconfont" !important;
+     font-size: 16px;
+     font-style: normal;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ #location {
+     font-size: 20px;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ /* 清除浮动 */
+ .clear::after {
+     content: '';
+     display: block;
+     clear: both;
+ }
+
+ body {
+     width: 100%;
+     height: 100vh;
+     background-color: #999996;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .container {
+     min-width: 740px;
+     height: 400px;
+     background-color: #1f2b2f;
+     color: aliceblue;
+     border-radius: 20px;
+     box-shadow: 0 0 70px 10px;
+ }
+
+ .left {
+     background-image: linear-gradient(135deg, #26c6da 10%, #1976d2 100%);
+     position: relative;
+     width: 300px;
+     height: 100%;
+     border-radius: 20px 0 0 20px;
+     box-shadow: 0 0 50px -15px rgb(33, 202, 224);
+     float: left;
+
+ }
+
+ .date-message {
+     position: absolute;
+     top: 25px;
+     left: 20px;
+ }
+
+ .location>span {
+     display: block;
+     margin-top: 10px;
+ }
+
+ .left-temperature {
+     position: absolute;
+     bottom: 25px;
+     left: 25px;
+ }
+
+ #weather1 {
+     font-size: 150px;
+     margin-left: 46px;
+     margin-bottom: 20px;
+ }
+
+ .weather-temp {
+     font-size: 50px;
+     font-weight: 700;
+ }
+
+ .weather-desc {
+     font-size: 20px;
+     margin-left: 3px;
+ }
+
+ .right {
+     float: right;
+     padding-top: 10px;
+     height: 100%;
+     box-sizing: border-box;
+     position: relative;
+     text-align: center;
+     width: 500px;
+
+
+ }
+
+ .right1 {
+     padding: 15px 15px 3px 15px;
+     margin: 10px auto;
+     box-shadow: 0 0 50px -5px rgba(0, 0, 0);
+     border-radius: 10px;
+     width: 300px;
+ }
+
+ .right1 div {
+     margin-bottom: 10px;
+ }
+
+ .right1 .title {
+     float: left;
+ }
+
+ .right1 .value {
+     float: right;
+ }
+
+ .right2>ul {
+     width: 440px;
+     border-radius: 20px;
+     margin: 20px auto;
+     box-shadow: 0 0 50px -5px rgba(0, 0, 0);
+ }
+
+ .right2>ul li {
+     float: left;
+     width: 80px;
+     padding: 15px;
+     cursor: pointer;
+     border-radius: 10px;
+     text-align: center;
+     transition: 200ms;
+ }
+
+ .right2>ul>li>span {
+     display: block;
+ }
+
+ .right2 {}
+
+ .right2>ul li:hover {
+     transform: scale(1.1);
+     background-color: #fff;
+     color: #1f2b2f;
+ }
+
+ .active {
+     background-color: #fff;
+     color: #1f2b2f;
+     box-shadow: 0 0 50px -10px white;
+ }
+
+ .day-temp {
+     font-weight: 700;
+ }
+
+ .right3 {
+     position: relative;
+ }
+
+ .right3>input {
+     width: 300px;
+     border-radius: 10px;
+     border: none;
+     height: 30px;
+     padding: 5px;
+     outline: none;
+     margin: 10px;
+     font-size: 20px;
+     transition: 200ms;
+     background-color: #1f2b2f;
+     color: #fff;
+     transition: 200ms;
+     border: 1px solid gray;
+
+ }
+
+ .right3>input:focus {
+     transform: scale(1.1);
+     box-shadow: 0 0 50px -15px rgb(255, 255, 255);
+ }
+
+ .right3>input:hover {
+     border: 1px solid white;
+     box-shadow: 0 0 50px -15px rgb(255, 255, 255);
+
+
+ }
+
+ .right4>button {
+     text-align: center;
+     margin-top: 15px;
+     outline: none;
+     width: 200px;
+     height: 40px;
+     border-radius: 10px;
+     border: none;
+     color: white;
+     cursor: pointer;
+     box-shadow: 0 0 50px -5px rgb(27, 144, 180);
+     background-color: #1f2b2f;
+     transition: 200ms;
+ }
+
+ .right4>button:hover {
+     transform: scale(1.1);
+     box-shadow: 0 0 20px -10px rgb(27, 144, 180);
+ }
